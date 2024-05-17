@@ -1,0 +1,38 @@
+Este conjunto de scripts en Python está diseñado para conectar a bases de datos como Azure Cosmos DB y MongoDB, con el objetivo de almacenar y consultar datos sobre vulnerabilidades de software. Cada script tiene una función específica, pero comparten el propósito de gestionar información sobre vulnerabilidades. A continuación, se detallan las características y funciones principales de cada script:
+
+1. Conexión a Azure Cosmos DB para IPs Vulnerables a BlueKeep:
+
+Propósito: Almacenar y consultar IPs vulnerables a BlueKeep.
+Funciones Principales:
+	Configurar la conexión a Azure Cosmos DB.
+	Verificar si la IP ya está almacenada.
+	Insertar nueva información si la IP no está almacenada.
+	Consultar todas las IPs almacenadas.
+
+Requisitos: json, requests, azure.cosmos, datetime.
+API Utilizada: BinaryEdge.
+
+2. Conexión a Azure Cosmos DB para Vulnerabilidades en Windows:
+
+Propósito: Almacenar y consultar vulnerabilidades de software en Windows.
+Funciones Principales:
+	Buscar y obtener detalles de CVEs usando las APIs de Vulners y CVE Details.
+	Clasificar puntajes CVSS.
+	Guardar los datos en Azure Cosmos DB.
+	Crear gráficos para visualizar la distribución de vulnerabilidades.
+Requisitos: json, requests, azure.cosmos, matplotlib, datetime.
+APIs Utilizadas: Vulners, CVE Details.
+3. Conexión a Azure Cosmos DB con Limpieza de Base de Datos:
+Propósito: Almacenar y consultar vulnerabilidades de software en Windows, con la capacidad de limpiar la base de datos.
+Funciones Principales:
+	Limpiar la base de datos existente.
+	Buscar vulnerabilidades usando APIs.
+	Guardar los datos en Azure Cosmos DB.
+	Crear gráficos para visualizar la distribución de puntajes CVSS de las vulnerabilidades.
+Requisitos: json, requests, azure.cosmos, matplotlib, datetime.
+
+Limpiar la base de datos existente.
+Buscar vulnerabilidades usando APIs.
+Guardar los datos en Azure Cosmos DB.
+Crear gráficos para visualizar la distribución de puntajes CVSS de las vulnerabilidades.
+Requisitos: json, requests, azure.cosmos, matplotlib, datetime.
